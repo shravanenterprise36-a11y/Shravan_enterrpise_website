@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import ourservicesimg from "../../assets/Herosection/ourservices.png";
 
 const bullets = [
   "In-house civil, electrical, and plumbing experts",
@@ -36,7 +37,7 @@ export default function About() {
           <div className="relative anim-child" style={{ opacity: 0, transform: "translateY(30px)", transition: "all 0.7s ease" }}>
             <div className="rounded-[28px] overflow-hidden shadow-2xl">
               <img
-                src="src\assets\Herosection\ourservices.png"
+                src={ourservicesimg}
                 alt="About Shravan Enterprises"
                 style={{ width: "100%", height: "auto", display: "block", margin: "0 auto" }}
               />
