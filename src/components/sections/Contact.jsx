@@ -13,7 +13,7 @@ export default function Contact() {
     if (sending) return;
     setSending(true);
 
-    const whatsappNumber = "91" + "9876543210"; 
+    const whatsappNumber = "91" + "9511777770"; 
     const message = `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nService: ${form.service}\nMessage: ${form.message}`;
     const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
 
@@ -72,23 +72,23 @@ export default function Contact() {
     },
     {
       label: "Phone",
-      value: "+91 98765 43210",
+      value: "+91 95117 77770",
       icon: <FiPhone size={18} />,
     },
     {
       label: "Email",
       value: (
         <a
-          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent("contact@shravanenterprises.com")}`}
+          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent("support@shravanenterprises.com")}`}
           onClick={(e) => {
             e.preventDefault();
-            openGmail("contact@shravanenterprises.com");
+            openGmail("support@shravanenterprises.com");
           }}
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: "var(--navy)", textDecoration: "underline", cursor: "pointer" }}
         >
-          contact@shravanenterprises.com
+          support@shravanenterprises.com
         </a>
       ),
       icon: <FiMail size={18} />,
@@ -164,7 +164,7 @@ export default function Contact() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label style={labelStyle}>Phone</label>
-                  <input name="phone" value={form.phone} onChange={handleChange} placeholder="+91 98765 43210" style={inputStyle} />
+                  <input name="phone" value={form.phone} onChange={handleChange} placeholder="+91 95117 77770" style={inputStyle} />
                 </div>
                 <div>
                   <label style={labelStyle}>Service Required</label>

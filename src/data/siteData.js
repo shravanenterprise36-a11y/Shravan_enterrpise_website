@@ -22,8 +22,7 @@ const siteData = {
       { label: 'Our Services', variant: 'secondary', href: '#services' },
     ],
     trust: ['ISO Certified', 'Govt. Approved', '100+ Projects', 'Pan-India'],
-    image:
-      'https://images.unsplash.com/photo-1581093588401-7a8a2a1a4b5f?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=0b9d3d6b1b8d89a6d6e6f2d2f1c3f1a9',
+    image: '/src/assets/Herosection/Herosection.jpg',
     experience: '15+ Years Experience',
   },
   about: {
@@ -32,8 +31,7 @@ const siteData = {
       'We are a full-service infrastructure company focused on sustainable, timely and cost-effective delivery.',
     ],
     bullets: ['Client-centric approach', 'Safety first', 'On-time delivery'],
-    image:
-      'https://images.unsplash.com/photo-1509460913899-4e7a70299b7a?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=5b9c1c8f1f5a7a6b2c3d4e5f6a7b8c9d',
+    image: '/src/assets/Herosection/ourservices.png',
   },
   visionMission: [
     { title: 'Vision', text: 'To be the country’s most trusted infrastructure partner.' },
@@ -42,12 +40,44 @@ const siteData = {
   ],
   services: {
     title: 'Our Services',
-    items: Array.from({ length: 6 }).map((_, i) => ({
-      id: i + 1,
-      title: ['Civil Engineering', 'Electrical Works', 'Mechanical Systems', 'Project Management', 'Consultation', 'Maintenance'][i],
-      desc: 'Comprehensive solutions tailored to project needs with focus on quality.',
-      image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3&s=a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7',
-    })),
+    items: [
+      {
+        id: 1,
+        title: 'Civil Engineering',
+        desc: 'Comprehensive civil engineering and infrastructure services.',
+        image: '/src/assets/services/civilservices.avif',
+      },
+      {
+        id: 2,
+        title: 'Electrical Works',
+        desc: 'Reliable electrical installation and maintenance.',
+        image: '/src/assets/services/electricalservice.avif',
+      },
+      {
+        id: 3,
+        title: 'Mechanical Systems',
+        desc: 'Mechanical systems, plumbing and HVAC solutions.',
+        image: '/src/assets/services/plumbinghero.png',
+      },
+      {
+        id: 4,
+        title: 'Project Management',
+        desc: 'End-to-end project management and coordination.',
+        image: '/src/assets/services/generalsupporthero.png',
+      },
+      {
+        id: 5,
+        title: 'Consultation',
+        desc: 'Expert consultation and feasibility studies.',
+        image: '/src/assets/services/carpenter.png',
+      },
+      {
+        id: 6,
+        title: 'Maintenance',
+        desc: 'Planned and reactive maintenance services.',
+        image: '/src/assets/services/repairandmaintence.avif',
+      },
+    ],
     cta: { heading: 'Need a Custom Solution?', sub: 'Contact our experts for a tailored plan.', btn: { label: 'Get A Quote', href: '#contact' } },
   },
   core: {

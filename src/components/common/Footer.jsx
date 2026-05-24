@@ -17,7 +17,7 @@ const footerLinks = {
     "General Maintenance",
   ],
   Connect: {
-    email: "contact@shravanenterprises.com",
+    email: "support@shravanenterprises.com",
     phone: "+919511777770",
     address: "Sr No 11 Parnakuti Paytha, Yerwada, Pune, Maharashtra 411006",
   },
@@ -45,7 +45,7 @@ export default function Footer() {
               Leading provider of corporate infrastructure maintenance and facility management solutions in Pune, Maharashtra.
             </p>
             <div className="flex gap-3">
-              <a
+              {/* <a
                 href="https://www.linkedin.com/company/shravan-enterprises"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,7 +53,7 @@ export default function Footer() {
                 style={{ background: "rgba(255,255,255,0.6)", color: "#6f604f", border: "1px solid rgba(63, 45, 24, 0.16)" }}
               >
                 <FaLinkedinIn />
-              </a>
+              </a> */}
               <a
                 href={`https://wa.me/${footerLinks.Connect.phone.replace(/\D/g, "")}`}
                 target="_blank"
@@ -63,7 +63,7 @@ export default function Footer() {
               >
                 <FaWhatsapp />
               </a>
-              <a
+              {/* <a
                 href="https://www.facebook.com/shravanenterprises"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export default function Footer() {
                 style={{ background: "rgba(255,255,255,0.6)", color: "#6f604f", border: "1px solid rgba(63, 45, 24, 0.16)" }}
               >
                 <FaFacebookF />
-              </a>
+              </a> */}
             </div>
           </div>
 
